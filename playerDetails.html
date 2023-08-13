@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL 2023</title>
+    <link rel="icon" href="logo_btn/favicon.ico" type="image/png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cf845565b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- - - - - - - - - - - MAIN NAV - - - - - - - - - - -->
+
+    <nav class="navbar">
+      <div class="left-container">
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house-user"></i> Home</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <a href="add-team.html"
+          ><button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Add Team
+          </button></a
+        >
+        <a href="add-player.html"
+          ><button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+             Add Player
+          </button></a
+        >
+      </div>
+    </nav>
+
+    <!--------- PLAYER DETAILS SECTION STARTS HERE --------->
+
+    <main class="PlayerDetailsPage">
+      <center><h1>Player Details :</h1></center>
+      <div class="player-Details" id="player-details-con">
+        <!-- PLAYER DETAILS HERE -->
+      </div>
+    </main>
+
+    <!--------- PLAYER DETAILS ENDS HERE --------->
+
+    <footer>
+      <p class="footer1">
+        © 2023, IPL Website made by Raja Dhoundiyal. 
+      </p>
+    </footer>
+
+    <script src="playerDetails.js"></script>
+  </body>
+</html>
